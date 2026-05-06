@@ -268,6 +268,16 @@ class AutoLogsTest extends \PHPUnit\Framework\TestCase
      * @return void
      * @throws Exception
      */
+    public function test_toolscreen(): void
+    {
+        $log = new TestLog('Toolscreen/toolscreen.log');
+        $this->assertStringEqualsFile($log->getExpectedPath(), $log->getOutput(), $log->getLogPath());
+    }
+
+    /**
+     * @return void
+     * @throws Exception
+     */
     public function test_craftbukkit_plugin_enabling(): void
     {
         $log = new TestLog('Vanilla/Bukkit/CraftBukkit/craftbukkit-plugin-enabling.log');

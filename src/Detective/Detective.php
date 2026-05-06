@@ -12,6 +12,7 @@ use Aternos\Codex\Minecraft\Log\Minecraft\MinecraftLauncher\MinecraftLauncherCli
 use Aternos\Codex\Minecraft\Log\Minecraft\MinecraftLog;
 use Aternos\Codex\Minecraft\Log\Minecraft\Pocketmine\PocketmineServerLog;
 use Aternos\Codex\Minecraft\Log\Minecraft\PrismLauncher\PrismLauncherClientLog;
+use Aternos\Codex\Minecraft\Log\Minecraft\Toolscreen\ToolscreenClientLog;
 use Aternos\Codex\Minecraft\Log\Minecraft\Vanilla\Bukkit\CraftBukkit\CraftBukkitServerLog;
 use Aternos\Codex\Minecraft\Log\Minecraft\Vanilla\Bukkit\CraftBukkit\OldCraftBukkitServerLog;
 use Aternos\Codex\Minecraft\Log\Minecraft\Vanilla\Bukkit\Folia\FoliaCrashReport;
@@ -100,6 +101,7 @@ class Detective extends \Aternos\Codex\Detective\Detective
         PrismLauncherClientLog::class,
         MinecraftLauncherClientLog::class,
         CustomSkinLoaderClientLog::class,
+        ToolscreenClientLog::class,
     ];
 
     /**
